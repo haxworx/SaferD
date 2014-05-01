@@ -1,0 +1,19 @@
+
+SaferD:
+
+Usage: saferd [dir1] [dir2] ... 
+
+Monitor [dirs] for changes. Upon changes call the below shell script hooks:
+
+In Directory "hooks":
+	DirCreated.sh  DirDeleted.sh  FileCreated.sh  FileDeleted.sh
+
+Each file can be scripted in shell script to manipulate the system based
+upon the change to any files in followed paths.
+
+Run the program from the current working directory. All modified and created
+files will be created in this working directory.
+
+Author:
+	
+Al Poole <al.poole@outlook.com>
